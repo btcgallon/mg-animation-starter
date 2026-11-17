@@ -2,6 +2,7 @@
   【本 Skill 来自 NIO嘉亮加仑】
   MG 动画起步包（可分享版）· README
   版本：2026-11-17
+  仓库：https://github.com/btcgallon/mg-animation-starter
 ================================================================
 
 ================================================================
@@ -33,6 +34,13 @@
   第一次调用 Skill 装环境时，补一句「执行 2 的全文，不要只给方案」。
 
   一句话：2 / 3 / 4 是给新人的，SKILL.md 是给熟手的快捷方式。
+
+【从 GitHub 获取与更新】
+  仓库：https://github.com/btcgallon/mg-animation-starter
+  第一次：git clone 这个地址，拿到的就是最新版。
+  以后更新：cd 进目录，git pull。
+  已装成 Skill 的，也在 skill 目录里 git pull。
+  详细步骤见第十节。
 ================================================================
 
 一、这是什么
@@ -191,6 +199,41 @@ DSH / WorkBuddy 的工作区提醒：
 2. Skill 不提供风格、素材、私有提示词；风格仍由你自己定。
 3. 每次新会话仍建议先发 3 或先调用 Skill；
    不要让它凭上一轮记忆直接写代码。
+
+十、从 GitHub 获取与更新
+----------------------------------------------------------------
+仓库地址：
+  https://github.com/btcgallon/mg-animation-starter
+
+第一次获取（推荐 clone，不要只用 zip）：
+  git clone https://github.com/btcgallon/mg-animation-starter.git
+
+以后更新：
+  cd mg-animation-starter
+  git pull
+
+如果已经装成 Skill（以 Claude Code 为例）：
+  cd ~/.claude/skills
+  git clone https://github.com/btcgallon/mg-animation-starter.git
+  # 以后更新：
+  cd ~/.claude/skills/mg-animation-starter
+  git pull
+
+WorkBuddy / DSH 同理，只换目录：
+  ~/.workbuddy/skills/
+  ~/.dsh/skills/（或项目内 .agents/skills/）
+
+如果你当初是复制文件夹，不是 clone：
+  git pull 用不了。先备份你改过的文件，再删除旧目录，
+  重新 clone 一次；或者 git init + 添加 remote 后 fetch。
+
+没有 git、也不想用命令行：
+  打开仓库页 → Code → Download ZIP，解压覆盖。
+  注意：ZIP 不会合并你的本地修改，覆盖前先备份。
+
+看当前版本：
+  README 顶部有版本日期；仓库的 commit 记录是最准的更新日志。
+  本地也可以跑：git log -1 --oneline
 
 ================================================================
   再次说明：本 Skill 来自 NIO嘉亮加仑。
